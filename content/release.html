@@ -34,6 +34,7 @@
 <li><a href=docs/latest/index.html>Latest</a></li>
 <li><a href=docs/stable/index.html>Stable</a></li>
 <li role=separator class=divider></li>
+<li><a href=docs/r1.4.0-incubating/>1.4.0-incubating</a></li>
 <li><a href=docs/r1.3.1-incubating/>1.3.1-incubating</a></li>
 <li><a href=docs/r1.3.0-incubating/>1.3.0-incubating</a></li>
 </ul>
@@ -78,6 +79,129 @@
 <div>
 <h1 id=title>Releases Archive</h1>
 <ul id=list>
+<h1><a href=/release/1.4.0-incubating.html>Apache Kyuubi(Incubating) 1.4.0-incubating Release Notes</a></h1>
+<p><small>2021 Dec 10 </small></p>
+<p>Hi all,</p>
+<p>In this release, Kyuubi supports the latest Spark 3.2, Z-Order to optimize sql, long running SQL engine without principal and keytab provided,
+mysql protocol frontend and mysql client. Other major updates includes GROUP engine.share.level support, asynchronous opening session,
+user-friendly kyuubi beeline and zookeeper authentication enhancement.</p>
+<p>To download Apache Kyuubi (Incubating) 1.4.0-incubating, visit the <a href=https://kyuubi.apache.org/releases.html>downloads page</a>.</p>
+<h1 id=highlight>Highlight</h1>
+<p>Fully verified with the latest Spark 3.2</p>
+<p>Support Z-Order to optimize SQL</p>
+<p>Support long running SQL engine without principal and keytab provided</p>
+<p>Support GROUP engine share level</p>
+<p>Enhance USER engine share level support engine pool</p>
+<p>Enhance zookeeper authentication and ACLs</p>
+<p>Add more Kyuubi defined functions</p>
+<p>Fully tested with all data lake platform Delta Lake, Iceberg and Hudi</p>
+<p>Support both KERBEROS and PLAIN authentication at the same time</p>
+<p>Support MySQL protocol frontend and MySQL client(experimental)</p>
+<p>Support to launch query engine asynchronously during opening session and user-friendly Kyuubi Hive JDBC and BeeLine</p>
+<h1 id=functionality>Functionality</h1>
+<ul>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1225>[KYUUBI #1225]</a> <a href=https://github.com/apache/incubator-kyuubi/pull/1228>[KYUUBI #1228]</a> Add kyuubi-extension-spark-3-2 module and profile to support latest spark-3.2</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/939>[KYUUBI #939]</a> Add Z-Order extensions to support optimize SQL</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/913>[KYUUBI #913]</a> Support long running SQL engine without principal and keytab provided</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1219>[KYUUBI #1219]</a> Support MySQL Protocol Frontend</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1349>[KYUUBI #1349]</a> Add new conf kyuubi.frontend.protocols</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1206>[KYUUBI #1206]</a> Support GROUP engine share level</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1018>[KYUUBI #1018]</a> Set spark.sql.execution.topKSortFallbackThreshold to 10000</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1059>[KYUUBI #1059]</a> Add Plan Only Operations</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1039>[KYUUBI #1039]</a> Application stop log redirect append to engineLog</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1159>[KYUUBI #1159]</a> Add Session stats on Kyuubi Query Engine Page</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1198>[KYUUBI #1198]</a> Support to incremental collect statement result</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1248>[KYUUBI #1248]</a> Change kyuubi.engine.session.initialize.sql default value to Nil</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1286>[KYUUBI #1286]</a> Increase kyuubi.session.engine.initialize.timeout default to 3min</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1323>[KYUUBI #1323]</a> Introduce EngineType to distinguish multiple engines</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1262>[KYUUBI #1262]</a> Support both KERBEROS and PLAIN authentication at the same time</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1160>[KYUUBI #1160]</a> Support to config operation log root dir both for kyuubi server and engine sides</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1204>[KYUUBI #1204]</a> Enhance zookeeper authentication and ACLs</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1039>[KYUUBI #1039]</a> Application stop log redirect append to engineLog</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1159>[KYUUBI #1159]</a> Add Session stats on Kyuubi Query Engine Page</p>
+</li>
+</ul>
+<h1 id=integration>Integration</h1>
+<ul>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/703>[KYUUBI #703]</a> Integrate test with Hudi 0.9.0</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1338>[KYUUBI #1338]</a> Integrate test with Iceberg 0.12.1</p>
+</li>
+</ul>
+<h1 id=hive-jdbc>Hive JDBC</h1>
+<ul>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1131>[KYUUBI #1131]</a> Rename KyuubiDriver to KyuubiHiveDriver</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1346>[KYUUBI #1346]</a> Support launch query engine asynchronously during opening session</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1377>[KYUUBI #1377]</a> Support to get launch engine log asynchronously with KyuubiConnection</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1414>[KYUUBI #1414]</a> Add kyuubi-hive-beeline module to support KyuubiConnection and KyuubiStatement</p>
+</li>
+</ul>
+<h1 id=others>Others</h1>
+<ul>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1047>[KYUUBI #1047]</a> Use deployment to run kyuubi server HA on K8s</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1223>[KYUUBI #1223]</a> Remove dead module kyuubi-spark-monitor</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/1277>[KYUUBI #1277]</a> Add UDF engine_id</p>
+</li>
+<li>
+<p><a href=https://github.com/apache/incubator-kyuubi/pull/660>[KYUUBI #660]</a> Add UDF session_user</p>
+</li>
+</ul>
+<h1 id=credits>Credits</h1>
+<p>Last but not least, this release would not have been possible without the following contributors:
+AnybodyHome, Brian Yue, Cheng Pan, Fei Wang, Fu Chen, Jagadesh Adireddi, Kent Yao, Min Zhao, Guoqing Yang, h, happytofly,
+hongdongdong, jiaoqingbo, qiuliang, qphien, senmiaoliu, simon, sunfangbin, sychen, timothy65535, ulysses-you, wFoget,
+xiebo03, xiongyinke, yanghua, yanyu34946, zhang1002, zhenjiaguo, zhouyifan279, zwangsheng, 张宇翔</p>
 <h1><a href=/release/1.3.1-incubating.html>Apache Kyuubi(Incubating) 1.3.1-incubating Release Notes</a></h1>
 <p><small>2021 Oct 25 </small></p>
 <p>Hi all,</p>
