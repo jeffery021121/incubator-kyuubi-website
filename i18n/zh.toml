@@ -17,7 +17,7 @@
   other = "数据湖上的 Serverless SQL"
 
 [kyuubi-introduce]
-  other = "Apache Kyuubi (Incubating)，一个分布式和多租户网关，用于在 Lakehouse 上提供 Serverless SQL。"
+  other = "Apache Kyuubi，一个分布式和多租户网关，用于在 Lakehouse 上提供 Serverless SQL。"
 
 [getting-started]
   other = "快速开始"
@@ -122,7 +122,7 @@
   other = "Powered by  Kyuubi"
 
 [powered-href]
-  other = "https://github.com/apache/incubator-kyuubi/discussions/925"
+  other = "https://github.com/apache/kyuubi/discussions/925"
 
 [powered-desc]
   other = "To add yourself to the list, please comment on the"
@@ -132,7 +132,7 @@
 
 # release page
 [download-kyuubi]
-  other = "下载 Apache Kyuubi (Incubating)"
+  other = "下载 Apache Kyuubi"
 
 [instructions]
   other = "Instructions"
@@ -175,6 +175,9 @@
 
 [all-archived-releases]
   other = "所有存档的版本"
+
+[all-kyuubi-shaded-releases]
+  other = "Kyuubi Shaded 所有存档的版本"
 
 [consider-use-the-latest-kyuubi]
   other = "以前版本的 Kyuubi 可能会受到安全问题的影响，请考虑使用最新版本。"

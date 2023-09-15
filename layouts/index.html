@@ -26,8 +26,20 @@
           {{ i18n "kyuubi-introduce" }}
         </p>
         <div class="bannerBtnContainer">
-          <a class="bannerBtn" href="https://kyuubi.apache.org/docs/latest/quick_start">{{ i18n "getting-started" }} »</a>
-          <a class="bannerBtn" href="https://github.com/apache/incubator-kyuubi">GitHub »</a>
+          {{ range $release := first 1 .Site.Params.releases }}
+          <!--
+            TODO: Remove this workaround when
+              - the build of readthedocs supports OpenSSL 1.1.1+
+              - 1.7.2 comes out
+            More info: https://github.com/urllib3/urllib3/issues/2168
+           -->
+          {{ $fixed_release := $release }}
+          {{ if eq $release "v1.7.1" }}
+          {{ $fixed_release = "v1.7.1-rc0" }}
+          {{ end }}
+            <a class="bannerBtn" href="https://kyuubi.readthedocs.io/en/{{ $fixed_release }}/quick_start">{{ i18n "getting-started" }} »</a>
+          {{ end }}
+          <a class="bannerBtn" href="https://github.com/apache/kyuubi">GitHub »</a>
         </div>
       </div>
     </div>

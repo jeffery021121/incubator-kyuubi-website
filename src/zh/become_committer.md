@@ -25,62 +25,127 @@ menu:
 <table border=0>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>姓名</th>
+      <th>Apache ID</th>
+      <th>Github ID</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Akira Ajisaka</td>
+      <td>aajisaka</td>
+      <td><a href="https://github.com/aajisaka">aajisaka</a></td>
+   </tr>
+    <tr>
+      <td>Bowen Liang</td>
+      <td>bowenliang</td>
+      <td><a href="https://github.com/bowenliang123">bowenliang123</a></td>
     </tr>
     <tr>
       <td>Cheng Pan</td>
+      <td>chengpan</td>
+      <td><a href="https://github.com/pan3793">pan3793</a></td>
+    </tr>
+    <tr>
+      <td>Denis Krivenko</td>
+      <td>dnskr</td>
+      <td><a href="https://github.com/dnskr">dnskr</a></td>
     </tr>
     <tr>
       <td>Dongdong Hong</td>
+      <td>hongdd</td>
+      <td><a href="https://github.com/hddong">hddong</a></td>
     </tr>
     <tr>
       <td>Duo Zhang</td>
+      <td>zhangduo</td>
+      <td><a href="https://github.com/Apache9">Apache9</a></td>
     </tr>
     <tr>
       <td>Fei Wang</td>
+      <td>feiwang</td>
+      <td><a href="https://github.com/turbofei">turbofei</a></td>
     </tr>
     <tr>
       <td>Fu Chen</td>
+      <td>fchen</td>
+      <td><a href="https://github.com/cfmcgrady">cfmcgrady</a></td>
     </tr>
     <tr>
       <td>Hongxiang Jiang</td>
+      <td>jhx1008</td>
+      <td><a href="https://github.com/jhx1008">jhx1008</a></td>
     </tr>
     <tr>
       <td>Jeff Zhang</td>
+      <td>zjffdu</td>
+      <td><a href="https://github.com/zjffdu">zjffdu</a></td>
+    </tr>
+    <tr>
+      <td>Kaifei Yi</td>
+      <td>yikaifei</td>
+      <td><a href="https://github.com/Yikf">Yikf</a></td>
     </tr>
     <tr>
       <td>Kent Yao</td>
+      <td>yao</td>
+      <td><a href="https://github.com/yaooqinn">yaooqinn</a></td>
+    </tr>
+    <td>Paul Lin</td>
+      <td>paullin</td>
+      <td><a href="https://github.com/link3280">link3280</a></td>
     </tr>
     <tr>
       <td>Min Zhao</td>
+      <td>zhaomin</td>
+      <td><a href="https://github.com/zhaomin1423">zhaomin1423</a></td>
     </tr>
     <tr>
       <td>Nicholas Jiang</td>
+      <td>nicholasjiang</td>
+      <td><a href="https://github.com/SteNicholas">SteNicholas</a></td>
     </tr>
     <tr>
       <td>Qingbo Jiao</td>
+      <td>jiaoqingbo</td>
+      <td><a href="https://github.com/jiaoqingbo">jiaoqingbo</a></td>
     </tr>
     <tr>
       <td>Shaoyun Chen</td>
+      <td>csy</td>
+      <td><a href="https://github.com/cxzl25">cxzl25</a></td>
+    </tr>
+    <tr>
+      <td>Tianlin Liao</td>
+      <td>tianlinliao</td>
+      <td><a href="https://github.com/lightning-L">tianlinliao</a></td>
     </tr>
     <tr>
       <td>Vino Yang</td>
+      <td>vinoyang</td>
+      <td><a href="https://github.com/yanghua">yanghua</a></td>
     </tr>
     <tr>
       <td>Willem Ning Jiang</td>
+      <td>ningjiang</td>
+      <td><a href="https://github.com/WillemJiang">WillemJiang</a></td>
     </tr>
     <tr>
       <td>Xiduo You</td>
+      <td>ulyssesyou</td>
+      <td><a href="https://github.com/ulysses-you">ulysses-you</a></td>
+    </tr>
+    <tr>
+      <td>Yaodong Zhang</td>
+      <td>zhangyaodong</td>
+      <td><a href="https://github.com/iodone">iodone</a></td>
     </tr>
     <tr>
       <td>Zhen Wang</td>
+      <td>wangzhen</td>
+      <td><a href="https://github.com/wForget">wForget</a></td>
     </tr>
-  </tbody>
+</tbody>
 </table>
 
 任何支持社区并在任何 CoPDoC 领域工作的人都可以成为 Apache Kyuubi Committer。
@@ -98,7 +163,7 @@ Apache Kyuubi 社区努力做到精英管理。
 
 ## Committer 要求:
 
-成为 Committer 或 PPMC 成员没有严格的规定。
+成为 Committer 或 PMC 成员没有严格的规定。
 新 Committer 的候选人通常是积极的贡献者和社区成员。
 不管怎样，如果能把规则说清楚一点，就能在一定程度上消除贡献者心中的疑惑，让社区更加透明、合理、公平。
 
